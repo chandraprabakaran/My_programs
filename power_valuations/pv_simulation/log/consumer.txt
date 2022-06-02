@@ -1,0 +1,5 @@
+05/11/2022 09:49:42 AM Broker address: amqp://guest:guest@rabbitmq, Message Queue: power, Min_PV: 0 Max_PV: 150
+05/11/2022 09:49:42 AM Broker address: amqp://guest:guest@rabbitmq and Queue power set
+05/11/2022 09:49:42 AM PVSimulator properties are initialized with Min PV: 0, Max PV: 150
+05/11/2022 09:50:42 AM Connection to server achieved.
+05/11/2022 09:50:42 AM <pv_simulation.simulator.simulator object at 0xffffaa0df310> is registered as consumer
