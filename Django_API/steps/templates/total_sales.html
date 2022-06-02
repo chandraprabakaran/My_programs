@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>list of Sales</h2>
+
+<table>
+  <tr>
+    <th>car_id_sales</th>
+      <th>
+          country
+      </th>
+    <th>merchant_id</th>
+      <th>selling_date</th>
+      <th>selling_week</th>
+      <th>payment_date</th>
+      <th>sell_price</th>
+      <th>transported_to_merchant</th>
+      <th>transport_date</th>
+      <th>has_tuning</th>
+      <th>has_airbags</th>
+      <th>has_alarm_system</th>
+      <th>Model</th>
+
+  </tr>
+  <tr>
+            {% for i,j,k,l,m,n,o,p,q,r,s,t,u in posts %}
+    <td>{{i}}</td><td>{{j}}</td><td>{{k}}</td><td>{{l}}</td><td>{{m}}</td><td>{{n}}</td><td>{{o}}</td><td>{{p}}</td><td>{{q}}</td><td>{{r}}</td><td>{{s}}</td><td>{{t}}</td><td>{{u}}</td>
+    </tr>
+   {% endfor %}
+  </tr>
+</table>
+
+</body>
+</html>

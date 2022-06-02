@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Lead time between payment and selling.</h2>
+
+<table>
+  <tr>
+    <th>car_id_sales</th>
+      <th>
+          country
+      </th>
+    <th>count of cars without airbag</th>
+          <th>payment_date</th>
+      <th>difference</th>
+
+  </tr>
+  <tr>
+      {% for i,j,k,l,m in posts %}
+    <td>{{i}}</td><td>{{j}}</td><td>{{k}}</td><td>{{l}}</td><td>{{m}}</td>
+<!--       <tr>-->
+<!--    <td>{{j}}</td>-->
+    </tr>
+   {% endfor %}
+  </tr>
+</table>
+
+</body>
+</html>
